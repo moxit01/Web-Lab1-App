@@ -2,7 +2,7 @@
 @model IntroModel
 @{
     ViewData["Title"] = "Intro";
-    ViewBag.SiteTitle = "My Dark Site";
+    ViewBag.Title = "My Dark Site";
 }
 
 
@@ -11,7 +11,7 @@
         </div>
 
         <div>
-            <form method="GET">
+            <form asp-page="Intro" method="GET">
 
                 <div class="form-group">
                     <label asp-for="Value1"> Value 1: </label>
@@ -43,7 +43,7 @@
 
 
 
-@section body{
+@section IntroPara{
 
     <div class="text-center">
         <h5> This is my para</h5>
